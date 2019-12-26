@@ -2,6 +2,9 @@ from calculator import Calculator
 
 class CalculatorImpl(Calculator):
 
+    def div(self, a, b):
+        return a / b
+    
     def mul(self, a, b):
         return a * b
 
@@ -15,6 +18,9 @@ class CalculatorImpl(Calculator):
 # Test main
 if __name__ == '__main__':
     c = CalculatorImpl()
+
+    # Test line for div here
+    print(c.div(4, 2))
 
     # Test line for mul here
     print(c.mul(3, 6))
